@@ -713,3 +713,5 @@ UAnimMontage* ASandboxCharacter_Mover::SelectAvoidanceImpactedAnimMontage()
 效果：
 
 ![1775253373274](https://img2024.cnblogs.com/blog/3614909/202604/3614909-20260404055618942-1668493652.gif)
+
+## 优化：用结构体+ChooserTable选择Impacted和Hit蒙太奇资产

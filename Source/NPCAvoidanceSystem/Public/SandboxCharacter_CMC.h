@@ -27,13 +27,11 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	//播放NPC受击动画蒙太奇事件
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "NPCAvoidance")
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "NPCAvoidance")
 	void PlayNPCImpactedMontage(UAnimMontage* MontageToPlay);
-	virtual void PlayNPCImpactedMontage_Implementation(UAnimMontage* MontageToPlay);
 
 	//NPC跟随事件
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "NPCAvoidance")
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "NPCAvoidance")
 	void StartNPCFollowing();
-	virtual void StartNPCFollowing_Implementation();
 	
 };

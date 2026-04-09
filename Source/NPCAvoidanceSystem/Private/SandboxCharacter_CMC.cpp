@@ -32,11 +32,3 @@ void ASandboxCharacter_CMC::SetupPlayerInputComponent(UInputComponent* PlayerInp
 }
 
 
-void ASandboxCharacter_CMC::StartNPCFollowing_Implementation()
-{
-}
-
-void ASandboxCharacter_CMC::PlayNPCImpactedMontage_Implementation(UAnimMontage* MontageToPlay)
-{
-}
-
