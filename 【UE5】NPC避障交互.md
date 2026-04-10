@@ -715,3 +715,21 @@ UAnimMontage* ASandboxCharacter_Mover::SelectAvoidanceImpactedAnimMontage()
 ![1775253373274](https://img2024.cnblogs.com/blog/3614909/202604/3614909-20260404055618942-1668493652.gif)
 
 ## 优化：用结构体+ChooserTable选择Impacted和Hit蒙太奇资产
+
+> 待整理该部分文档
+
+## 待优化项：根据具体触发条件设置开不开启mesh的混合
+
+避免出现这种情况：
+
+![1775816079317](https://img2024.cnblogs.com/blog/3614909/202604/3614909-20260410181507968-848721099.png)
+
+但是关了Mesh混合又会出现手部动画蒙太奇不会适配移动方向。。。
+
+大致思路：根据玩家HitStructure中的Hit方向，也就是FHitStructure.PlayerHitDirection的值来分别设置蒙太奇的混合Pose输出，同时设置混合权重
+
+这是一个参考：
+
+![1775816715818](https://img2024.cnblogs.com/blog/3614909/202604/3614909-20260410182523709-15514336.png)
+
+![1775816684655](https://img2024.cnblogs.com/blog/3614909/202604/3614909-20260410182525452-1508223564.png)
